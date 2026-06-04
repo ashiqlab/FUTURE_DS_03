@@ -156,16 +156,14 @@ Helps uncover demographic conversion trends.
 
 ---
 
-## Dataset
+## Files Included
 
-**Bank Marketing Dataset**
-
-- 41,188 Records
-- Customer Demographics
-- Marketing Campaign Information
-- Contact Channel Details
-- Previous Campaign Outcomes
-- Subscription Conversion Status
+- Bank Additional Full Raw Data
+- Bank Data Extraction and Analysis SQL
+- Cleaned Bank Data
+- Dashboard Screenshot
+- Dashboard Power BI
+- README.md
 
 ---
 
