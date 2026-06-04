@@ -1,31 +1,31 @@
 # FUTURE_DS_03
 
-# Marketing Funnel & Conversion Performance Dashboard
+# MARKETING FUNNEL & CONVERSION PERFORMANCE ANALYSIS
 
 ## Dashboard Preview
 
-![Dashboard Preview](dashboard-preview.png)
+<img width="892" height="502" alt="Dashboard Screenshot" src="https://github.com/user-attachments/assets/8cb70a75-f68f-4463-852d-74a2bd0cf62a" />
 
-*Power BI dashboard showcasing marketing funnel performance, conversion trends, customer segmentation, and campaign effectiveness.*
+*Power BI dashboard analyzing marketing funnel performance, customer conversion behavior, campaign effectiveness, and customer segmentation.*
 
 ---
 
 ## Project Overview
 
-This Power BI project analyzes customer conversion behavior across a bank marketing campaign. The dashboard helps stakeholders understand how customers progress through the marketing funnel, identify major drop-off points, evaluate campaign performance, and discover high-converting customer segments.
+This Power BI project analyzes a bank marketing campaign to evaluate customer conversion performance across different funnel stages. The dashboard helps identify where prospects drop off, which customer segments convert the most, and which marketing channels drive better results.
 
-The analysis focuses on conversion trends by contact channel, age group, job category, and previous campaign outcomes while tracking overall funnel performance and conversion efficiency.
+The analysis focuses on funnel performance, conversion rates, contact channels, age groups, job categories, and previous campaign outcomes to support data-driven marketing decisions.
 
 ---
 
 ## Objectives
 
-- Analyze marketing funnel performance and customer conversion behavior.
-- Identify major drop-off points across funnel stages.
-- Measure overall conversion rates and campaign effectiveness.
-- Evaluate the impact of contact channels on conversions.
-- Identify high-performing customer segments for targeted marketing.
-- Provide actionable recommendations to improve conversion rates.
+- Analyze customer movement across the marketing funnel.
+- Identify major conversion drop-off points.
+- Measure overall campaign conversion performance.
+- Compare conversion effectiveness across contact channels.
+- Identify high-converting customer segments.
+- Provide actionable recommendations to improve campaign results.
 
 ---
 
@@ -34,149 +34,127 @@ The analysis focuses on conversion trends by contact channel, age group, job cat
 ### Performed in Power Query
 
 - Removed duplicate records.
-- Checked and handled missing and unknown values.
+- Checked and handled blank and unknown values.
 - Standardized column names and formatting.
-- Created Age Group categories for customer segmentation.
-- Created a custom Month Sort Order column for fiscal reporting.
-- Converted data types for numerical and categorical fields.
-- Applied data validation checks to ensure reporting accuracy.
+- Created Age Group categories for segmentation analysis.
+- Validated data types and business rules.
+- Prepared data for KPI and funnel analysis.
 
 ---
 
 ## Key Metrics & DAX Measures
 
-| Metric | Formula / Description |
+| Metric | Description |
 |----------|----------|
-| Total Contacts | Count of all campaign contacts |
-| Interested Leads | Customers with call duration > 180 seconds |
-| Qualified Leads | Customers with previous campaign interactions |
-| Converted Customers | Customers with Conversion Status = "Yes" |
-| Conversion Rate | `DIVIDE([Converted Customers],[Total Contacts],0)` |
-| Average Call Duration | Average duration of customer calls |
-| Campaign Contacts | Total campaign touchpoints |
+| Total Contacts | Total customers contacted |
+| Interested Leads | Customers showing initial interest |
+| Qualified Leads | Customers meeting qualification criteria |
+| Converted Customers | Customers who subscribed to the term deposit |
+| Conversion Rate % | Converted Customers ÷ Total Contacts |
+| Contact Channel Share | Cellular vs Telephone contribution |
 
 ---
 
 ## Dashboard Features
 
-### Executive Overview
+### Customer Funnel Overview
 
-Displays key funnel KPIs:
+Visualizes customer progression through the marketing funnel:
 
 - Total Contacts
 - Interested Leads
 - Qualified Leads
 - Converted Customers
-- Conversion Rate
 
-Includes a marketing funnel visualization to track customer progression through each stage.
-
----
-
-### Conversion Trend Analysis
-
-Tracks monthly conversion performance and campaign effectiveness.
-
-- Monthly conversion trends
-- Conversion rate monitoring
-- Seasonal performance analysis
+Helps identify where the largest customer drop-offs occur.
 
 ---
 
-### Contact Channel Analysis
+### Conversion Rate by Previous Outcome
 
-Compares conversion performance across communication channels.
-
-- Cellular vs Telephone
-- Channel contribution analysis
-- Conversion effectiveness comparison
-
----
-
-### Customer Segmentation Analysis
-
-Analyzes conversion behavior by:
-
-- Age Group
-- Job Category
-- Education Level
-- Marital Status
-
-Identifies high-converting customer segments.
-
----
-
-### Previous Campaign Outcome Analysis
-
-Evaluates conversion rates based on previous campaign outcomes.
+Analyzes conversion performance based on previous campaign outcomes:
 
 - Success
 - Failure
 - Nonexistent
 
-Helps assess the impact of historical customer interactions.
+Identifies customers most likely to convert based on historical interactions.
 
 ---
 
-### Insights & Recommendations Panel
+### Contact Type Analysis
 
-Provides actionable business recommendations directly within the dashboard.
+Compares conversion contribution across communication channels:
+
+- Cellular
+- Telephone
+
+Helps determine the most effective outreach method.
 
 ---
 
-## Dashboard Pages
+### Top 5 Jobs by Conversion Rate
 
-### Page 1: Executive Overview
+Highlights customer occupations with the highest conversion rates.
 
-- KPI Cards
-- Marketing Funnel Overview
-- Conversion Trend by Month
-- Conversion Rate by Contact Type
-- Interactive Slicers
+Identifies valuable customer segments for future campaigns.
 
-### Page 2: Customer Insights
+---
 
-- Conversion Rate by Age Group
-- Top 10 Jobs by Conversion Rate
-- Education Analysis
-- Marital Status Analysis
+### Conversion Rate by Age Group
 
-### Page 3: Campaign Performance
+Analyzes conversion performance across age categories:
 
-- Conversion Rate by Previous Outcome
-- Campaign Contact Analysis
-- Call Duration Analysis
-- Monthly Performance Matrix
+- 18–25
+- 26–35
+- 36–45
+- 46–55
+- 56–65
+- 65+
+
+Helps uncover demographic conversion trends.
 
 ---
 
 ## Insights Gained
 
-- Major funnel drop-off occurs between Interested Leads and Qualified Leads.
-- Cellular campaigns generate significantly more conversions than telephone campaigns.
-- Students achieved the highest conversion rate among job categories.
-- Customers aged 65+ demonstrated the strongest conversion performance.
-- Previous successful campaign interactions strongly increase conversion likelihood.
+- Major drop-off occurs between **Interested Leads** and **Qualified Leads**.
+- **Cellular campaigns** generate more conversions than telephone campaigns.
+- Customers aged **65+** have the highest conversion rate.
+- **Students** are the highest-converting job segment.
+- Customers with a **previous successful campaign outcome** are significantly more likely to convert.
 
 ---
 
 ## Recommendations
 
 - Improve lead qualification and follow-up processes.
-- Increase focus on cellular outreach channels.
-- Target high-converting customer segments such as students and senior customers.
-- Develop personalized campaigns using previous customer interaction history.
-- Continuously monitor funnel performance to identify conversion bottlenecks.
+- Increase focus on cellular outreach campaigns.
+- Target high-converting segments such as students and senior customers.
+- Leverage previous campaign success data for customer targeting.
+- Continuously monitor funnel performance to reduce drop-offs.
 
 ---
 
 ## Tools Used
 
-- **Power BI** – Dashboard development and visualization
-- **Power Query** – Data cleaning and transformation
-- **DAX** – KPI calculations and business measures
-- **SQL** – Data extraction and analysis
-- **Excel** – Data exploration and validation
+- **Power BI** – Dashboard Development & Visualization
+- **Power Query** – Data Cleaning & Transformation
+- **DAX** – KPI Calculations & Measures
+- **Excel** – Data Validation & Exploration
+- **SQL** – Data Extraction & Analysis
+
+---
+
+## Dashboard KPIs
+
+| KPI | Value |
+|-------|-------|
+| Total Contacts | 41.19K |
+| Interested Leads | 20.48K |
+| Qualified Leads | 5.63K |
+| Converted Customers | 4.64K |
+| Conversion Rate | 11.27% |
 
 ---
 
@@ -184,12 +162,12 @@ Provides actionable business recommendations directly within the dashboard.
 
 **Bank Marketing Dataset**
 
-- 41,188 customer records
-- Marketing campaign interactions
-- Customer demographics
-- Contact channels
-- Campaign outcomes
-- Conversion status
+- 41,188 Records
+- Customer Demographics
+- Marketing Campaign Information
+- Contact Channel Details
+- Previous Campaign Outcomes
+- Subscription Conversion Status
 
 ---
 
@@ -197,7 +175,4 @@ Provides actionable business recommendations directly within the dashboard.
 
 **Ashiq Hussain**
 
-Aspiring Data Analyst skilled in Power BI, SQL, Excel, Power Query, and DAX.
-
-LinkedIn: *Add your LinkedIn URL*  
-Portfolio: *Add your Portfolio URL*
+Data Analyst | Power BI | SQL | Excel | DAX
