@@ -163,7 +163,6 @@ Helps uncover demographic conversion trends.
 - Cleaned Bank Data
 - Dashboard Screenshot
 - Dashboard Power BI
-- README.md
 
 ---
 
